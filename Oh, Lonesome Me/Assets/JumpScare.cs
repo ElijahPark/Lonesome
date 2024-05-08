@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class JumpScare : MonoBehaviour
 {
@@ -21,13 +22,19 @@ public class JumpScare : MonoBehaviour
         {
             JumpScareImg.SetActive(true);
             audioSource.Play();
-            StartCoroutine(DisableImg());
+            StartCoroutine(DisableImg(2));
+            Debug.Log("No");
+            StartCoroutine(DisableImg(2));
+            
         }
     }
 
-    IEnumerator DisableImg()
+    IEnumerator DisableImg(float time)
     {
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(time);
         JumpScareImg.SetActive(false);
+        yield return new WaitForSeconds(time);
+        SceneManager.LoadScene(1);
+
     }
 }

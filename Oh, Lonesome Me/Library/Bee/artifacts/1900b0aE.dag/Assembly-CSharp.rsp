@@ -358,7 +358,11 @@
 -analyzer:"C:/Program Files/Unity 2022.2.19f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll"
 -analyzer:"C:/Program Files/Unity 2022.2.19f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
 "Assets/JumpScare.cs"
+"Assets/JumpScareR.cs"
+"Assets/KeyScript.cs"
 "Assets/SC_FPSController.cs"
+"Assets/StartButton.cs"
+"Assets/wIN.cs"
 -langversion:9.0
 
 /deterministic
